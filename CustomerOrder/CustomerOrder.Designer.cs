@@ -28,18 +28,133 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label1 = new System.Windows.Forms.Label();
+            this.orderDateTitle = new System.Windows.Forms.Label();
+            this.requiredDateTitle = new System.Windows.Forms.Label();
+            this.shippedDateTitle = new System.Windows.Forms.Label();
+            this.statusTitle = new System.Windows.Forms.Label();
+            this.orderDate = new System.Windows.Forms.Label();
+            this.requiredDate = new System.Windows.Forms.Label();
+            this.shippedDate = new System.Windows.Forms.Label();
+            this.status = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(13, 14);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(118, 20);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "orderNumber";
+            // 
+            // orderDateTitle
+            // 
+            this.orderDateTitle.AutoSize = true;
+            this.orderDateTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.orderDateTitle.Location = new System.Drawing.Point(14, 45);
+            this.orderDateTitle.Name = "orderDateTitle";
+            this.orderDateTitle.Size = new System.Drawing.Size(89, 17);
+            this.orderDateTitle.TabIndex = 1;
+            this.orderDateTitle.Text = "Order Date";
+            // 
+            // requiredDateTitle
+            // 
+            this.requiredDateTitle.AutoSize = true;
+            this.requiredDateTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.requiredDateTitle.Location = new System.Drawing.Point(160, 45);
+            this.requiredDateTitle.Name = "requiredDateTitle";
+            this.requiredDateTitle.Size = new System.Drawing.Size(113, 17);
+            this.requiredDateTitle.TabIndex = 2;
+            this.requiredDateTitle.Text = "Required Date";
+            // 
+            // shippedDateTitle
+            // 
+            this.shippedDateTitle.AutoSize = true;
+            this.shippedDateTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.shippedDateTitle.Location = new System.Drawing.Point(312, 45);
+            this.shippedDateTitle.Name = "shippedDateTitle";
+            this.shippedDateTitle.Size = new System.Drawing.Size(106, 17);
+            this.shippedDateTitle.TabIndex = 3;
+            this.shippedDateTitle.Text = "Shipped Date";
+            // 
+            // statusTitle
+            // 
+            this.statusTitle.AutoSize = true;
+            this.statusTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.statusTitle.Location = new System.Drawing.Point(479, 45);
+            this.statusTitle.Name = "statusTitle";
+            this.statusTitle.Size = new System.Drawing.Size(54, 17);
+            this.statusTitle.TabIndex = 4;
+            this.statusTitle.Text = "Status";
+            // 
+            // orderDate
+            // 
+            this.orderDate.AutoSize = true;
+            this.orderDate.Location = new System.Drawing.Point(14, 62);
+            this.orderDate.Name = "orderDate";
+            this.orderDate.Size = new System.Drawing.Size(72, 17);
+            this.orderDate.TabIndex = 5;
+            this.orderDate.Text = "orderDate";
+            // 
+            // requiredDate
+            // 
+            this.requiredDate.AutoSize = true;
+            this.requiredDate.Location = new System.Drawing.Point(160, 62);
+            this.requiredDate.Name = "requiredDate";
+            this.requiredDate.Size = new System.Drawing.Size(91, 17);
+            this.requiredDate.TabIndex = 6;
+            this.requiredDate.Text = "requiredDate";
+            // 
+            // shippedDate
+            // 
+            this.shippedDate.AutoSize = true;
+            this.shippedDate.Location = new System.Drawing.Point(312, 62);
+            this.shippedDate.Name = "shippedDate";
+            this.shippedDate.Size = new System.Drawing.Size(88, 17);
+            this.shippedDate.TabIndex = 7;
+            this.shippedDate.Text = "shippedDate";
+            // 
+            // status
+            // 
+            this.status.AutoSize = true;
+            this.status.Location = new System.Drawing.Point(479, 62);
+            this.status.Name = "status";
+            this.status.Size = new System.Drawing.Size(46, 17);
+            this.status.TabIndex = 8;
+            this.status.Text = "status";
             // 
             // CustomerOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.status);
+            this.Controls.Add(this.shippedDate);
+            this.Controls.Add(this.requiredDate);
+            this.Controls.Add(this.orderDate);
+            this.Controls.Add(this.statusTitle);
+            this.Controls.Add(this.shippedDateTitle);
+            this.Controls.Add(this.requiredDateTitle);
+            this.Controls.Add(this.orderDateTitle);
+            this.Controls.Add(this.label1);
             this.Name = "CustomerOrder";
-            this.Size = new System.Drawing.Size(244, 226);
+            this.Size = new System.Drawing.Size(700, 318);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label orderDateTitle;
+        private System.Windows.Forms.Label requiredDateTitle;
+        private System.Windows.Forms.Label shippedDateTitle;
+        private System.Windows.Forms.Label statusTitle;
+        private System.Windows.Forms.Label orderDate;
+        private System.Windows.Forms.Label requiredDate;
+        private System.Windows.Forms.Label shippedDate;
+        private System.Windows.Forms.Label status;
     }
 }

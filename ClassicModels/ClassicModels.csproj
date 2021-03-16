@@ -133,5 +133,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CustomerOrder\CustomerOrder.csproj">
+      <Project>{881C593A-DBA3-49E9-B3E5-5F408ED1AB28}</Project>
+      <Name>CustomerOrder</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
