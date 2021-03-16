@@ -8,5 +8,8 @@ namespace CustomerOrder
 {
     class OrderDetailModel
     {
+        public string productCode { get; set; }
+        public int quantityOrdered { get; set; }
+        public float priceEach { get; set; }
     }
 }
