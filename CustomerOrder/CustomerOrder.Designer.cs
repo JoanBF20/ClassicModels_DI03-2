@@ -37,6 +37,7 @@
             this.requiredDate = new System.Windows.Forms.Label();
             this.shippedDate = new System.Windows.Forms.Label();
             this.status = new System.Windows.Forms.Label();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.SuspendLayout();
             // 
             // orderNumber
@@ -125,10 +126,18 @@
             this.status.TabIndex = 8;
             this.status.Text = "status";
             // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(17, 89);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(666, 308);
+            this.flowLayoutPanel1.TabIndex = 9;
+            // 
             // CustomerOrder
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.Controls.Add(this.flowLayoutPanel1);
             this.Controls.Add(this.status);
             this.Controls.Add(this.shippedDate);
             this.Controls.Add(this.requiredDate);
@@ -139,7 +148,7 @@
             this.Controls.Add(this.orderDateTitle);
             this.Controls.Add(this.orderNumber);
             this.Name = "CustomerOrder";
-            this.Size = new System.Drawing.Size(700, 318);
+            this.Size = new System.Drawing.Size(700, 414);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -156,5 +165,6 @@
         private System.Windows.Forms.Label requiredDate;
         private System.Windows.Forms.Label shippedDate;
         private System.Windows.Forms.Label status;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
     }
 }
