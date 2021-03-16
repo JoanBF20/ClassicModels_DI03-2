@@ -99,6 +99,7 @@
       <DependentUpon>CustomerOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="DataAccess.cs" />
+    <Compile Include="Helper.cs" />
     <Compile Include="OrderDetailModel.cs" />
     <Compile Include="OrderLine.cs">
       <SubType>UserControl</SubType>

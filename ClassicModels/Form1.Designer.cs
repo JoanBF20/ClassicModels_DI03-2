@@ -33,6 +33,7 @@
             this.totalTitle = new System.Windows.Forms.Label();
             this.total = new System.Windows.Forms.Label();
             this.customerOrder1 = new CustomerOrder.CustomerOrder();
+            this.customerOrder1.CnnString = Helper.CnnVal("ClassicModels");
             this.customerTitle = new System.Windows.Forms.Label();
             this.orderNumber = new System.Windows.Forms.Label();
             this.SuspendLayout();

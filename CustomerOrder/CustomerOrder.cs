@@ -12,6 +12,12 @@ namespace CustomerOrder
 {
     public partial class CustomerOrder : UserControl
     {
+        [Description("ConnectionString"), Category("Data"), Browsable(true),]
+        public string CnnString
+        {
+            get { return Helper.CnnVal; }
+            set { Helper.CnnVal = value; }
+        }
         public OrderModel order = new OrderModel();
         private List<OrderDetailModel> orderDetails;
         public float total = 0;
