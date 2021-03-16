@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassicModels
 {
-    class OrderModelcs
+    class OrderModel
     {
         public int orderNumber { get; set; }
         public DateTime orderDate { get; set; }
