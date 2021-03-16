@@ -28,5 +28,16 @@ namespace ClassicModels
             ordersComboBox.DataSource = orders;
             ordersComboBox.DisplayMember = "orderNumber";
         }
+
+        private void ordersComboBox_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            OrderModel ordermodel = orders.ElementAt(ordersComboBox.SelectedIndex);
+            customerOrder1.order.orderDate = ordermodel.orderDate;
+            customerOrder1.order.orderNumber = ordermodel.orderNumber;
+            customerOrder1.order.requiredDate = ordermodel.requiredDate;
+            customerOrder1.order.shippedDate = ordermodel.shippedDate;
+            customerOrder1.order.status = ordermodel.status;
+            customerOrder1.updateData();
+        }
     }
 }

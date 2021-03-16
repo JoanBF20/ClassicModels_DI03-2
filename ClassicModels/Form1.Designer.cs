@@ -49,6 +49,7 @@
             this.ordersComboBox.Name = "ordersComboBox";
             this.ordersComboBox.Size = new System.Drawing.Size(121, 24);
             this.ordersComboBox.TabIndex = 1;
+            this.ordersComboBox.SelectedIndexChanged += new System.EventHandler(this.ordersComboBox_SelectedIndexChanged);
             // 
             // customerOrder1
             // 
