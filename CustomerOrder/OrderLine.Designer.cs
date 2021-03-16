@@ -39,7 +39,7 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(71, 71);
             this.pictureBox1.TabIndex = 0;
@@ -48,7 +48,7 @@
             // productName
             // 
             this.productName.AutoSize = true;
-            this.productName.Location = new System.Drawing.Point(82, 26);
+            this.productName.Location = new System.Drawing.Point(77, 26);
             this.productName.Name = "productName";
             this.productName.Size = new System.Drawing.Size(93, 17);
             this.productName.TabIndex = 1;
@@ -102,7 +102,7 @@
             this.Controls.Add(this.productName);
             this.Controls.Add(this.pictureBox1);
             this.Name = "OrderLine";
-            this.Size = new System.Drawing.Size(668, 79);
+            this.Size = new System.Drawing.Size(668, 72);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

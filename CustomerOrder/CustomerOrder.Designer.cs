@@ -128,9 +128,11 @@
             // 
             // flowLayoutPanel1
             // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(17, 89);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(666, 308);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(739, 308);
             this.flowLayoutPanel1.TabIndex = 9;
             // 
             // CustomerOrder
@@ -148,7 +150,7 @@
             this.Controls.Add(this.orderDateTitle);
             this.Controls.Add(this.orderNumber);
             this.Name = "CustomerOrder";
-            this.Size = new System.Drawing.Size(700, 414);
+            this.Size = new System.Drawing.Size(777, 414);
             this.ResumeLayout(false);
             this.PerformLayout();
 

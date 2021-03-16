@@ -100,12 +100,21 @@
     </Compile>
     <Compile Include="DataAccess.cs" />
     <Compile Include="OrderDetailModel.cs" />
+    <Compile Include="OrderLine.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="OrderLine.Designer.cs">
+      <DependentUpon>OrderLine.cs</DependentUpon>
+    </Compile>
     <Compile Include="OrderModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="CustomerOrder.resx">
       <DependentUpon>CustomerOrder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OrderLine.resx">
+      <DependentUpon>OrderLine.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

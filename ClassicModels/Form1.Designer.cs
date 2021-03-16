@@ -53,16 +53,17 @@
             // 
             // customerOrder1
             // 
+            this.customerOrder1.AutoScroll = true;
             this.customerOrder1.Location = new System.Drawing.Point(13, 44);
             this.customerOrder1.Name = "customerOrder1";
-            this.customerOrder1.Size = new System.Drawing.Size(775, 394);
+            this.customerOrder1.Size = new System.Drawing.Size(775, 414);
             this.customerOrder1.TabIndex = 2;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 470);
             this.Controls.Add(this.customerOrder1);
             this.Controls.Add(this.ordersComboBox);
             this.Controls.Add(this.customersComboBox);
