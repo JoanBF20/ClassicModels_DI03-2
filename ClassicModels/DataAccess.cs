@@ -19,7 +19,7 @@ namespace ClassicModels
                 return connection.Query<CustomerModel>(select).ToList();
             }
         }
-        public List<OrderModel> GetOrdersByUser(int customerNumber)
+        public static List<OrderModel> GetOrdersByUser(int customerNumber)
         {
             using (MySqlConnection connection = new MySqlConnection(Helper.CnnVal("ClassicModels")))
             {
