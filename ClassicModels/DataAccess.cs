@@ -14,7 +14,7 @@ namespace ClassicModels
         {
             using (MySqlConnection connection = new MySqlConnection(Helper.CnnVal("ClassicModels")))
             {
-                string select = "select customerNumber, customerName from customers";
+                string select = "select distinct customers.customerNumber, customerName from customers inner join orders on customers.customerNumber = orders.customerNumber";
 
                 return connection.Query<CustomerModel>(select).ToList();
             }

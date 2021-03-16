@@ -34,7 +34,7 @@ namespace CustomerOrder
             foreach (OrderDetailModel orderDetail in orderDetails){
                 total += orderDetail.priceEach * orderDetail.quantityOrdered;
                 OrderLine orderline = new OrderLine();
-                orderline.orderDetail = orderDetails.ElementAt(0);
+                orderline.orderDetail = orderDetail;
                 flowLayoutPanel1.Controls.Add(orderline);
                 orderline.updateData();
             }
