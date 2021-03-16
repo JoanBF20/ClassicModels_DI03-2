@@ -38,6 +38,7 @@ namespace ClassicModels
             customerOrder1.order.shippedDate = ordermodel.shippedDate;
             customerOrder1.order.status = ordermodel.status;
             customerOrder1.updateData();
+            total.Text = customerOrder1.total + "€";
         }
     }
 }

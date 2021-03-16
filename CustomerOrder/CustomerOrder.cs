@@ -14,6 +14,7 @@ namespace CustomerOrder
     {
         public OrderModel order = new OrderModel();
         private List<OrderDetailModel> orderDetails;
+        public float total = 0;
         public CustomerOrder()
         {
             InitializeComponent();
@@ -29,7 +30,9 @@ namespace CustomerOrder
             orderNumber.Text = order.orderNumber.ToString();
             orderDetails = DataAccess.GetOrderDetails(order.orderNumber);
             flowLayoutPanel1.Controls.Clear();
+            total = 0;
             foreach (OrderDetailModel orderDetail in orderDetails){
+                total += orderDetail.priceEach * orderDetail.quantityOrdered;
                 OrderLine orderline = new OrderLine();
                 orderline.orderDetail = orderDetails.ElementAt(0);
                 flowLayoutPanel1.Controls.Add(orderline);
