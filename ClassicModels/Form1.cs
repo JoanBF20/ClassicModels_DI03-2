@@ -12,9 +12,13 @@ namespace ClassicModels
 {
     public partial class Form1 : Form
     {
+        private List<CustomerModel> customers;
         public Form1()
         {
+            customers = DataAccess.GetCustomers();
             InitializeComponent();
+            customersComboBox.DataSource = customers;
+            customersComboBox.DisplayMember = "customerName";
         }
     }
 }

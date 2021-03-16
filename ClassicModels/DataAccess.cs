@@ -10,7 +10,7 @@ namespace ClassicModels
 {
     class DataAccess
     {
-        public List<CustomerModel> GetCustomers()
+        public static List<CustomerModel> GetCustomers()
         {
             using (MySqlConnection connection = new MySqlConnection(Helper.CnnVal("ClassicModels")))
             {
