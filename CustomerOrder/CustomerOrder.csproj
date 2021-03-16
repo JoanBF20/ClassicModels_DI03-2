@@ -99,6 +99,7 @@
       <DependentUpon>CustomerOrder.cs</DependentUpon>
     </Compile>
     <Compile Include="DataAccess.cs" />
+    <Compile Include="OrderDetailModel.cs" />
     <Compile Include="OrderModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

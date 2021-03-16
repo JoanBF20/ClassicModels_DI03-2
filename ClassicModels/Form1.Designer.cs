@@ -30,6 +30,7 @@
         {
             this.customersComboBox = new System.Windows.Forms.ComboBox();
             this.ordersComboBox = new System.Windows.Forms.ComboBox();
+            this.customerOrder1 = new CustomerOrder.CustomerOrder();
             this.SuspendLayout();
             // 
             // customersComboBox
@@ -49,11 +50,19 @@
             this.ordersComboBox.Size = new System.Drawing.Size(121, 24);
             this.ordersComboBox.TabIndex = 1;
             // 
+            // customerOrder1
+            // 
+            this.customerOrder1.Location = new System.Drawing.Point(13, 44);
+            this.customerOrder1.Name = "customerOrder1";
+            this.customerOrder1.Size = new System.Drawing.Size(775, 394);
+            this.customerOrder1.TabIndex = 2;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.customerOrder1);
             this.Controls.Add(this.ordersComboBox);
             this.Controls.Add(this.customersComboBox);
             this.Name = "Form1";
@@ -66,6 +75,7 @@
 
         private System.Windows.Forms.ComboBox customersComboBox;
         private System.Windows.Forms.ComboBox ordersComboBox;
+        private CustomerOrder.CustomerOrder customerOrder1;
     }
 }
 
